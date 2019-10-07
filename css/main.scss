@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap&subset=cyrillic');
+
+@import "_mixins.scss";
+@import "preloader-animation.css";
+@import "logo-animation.css";
+
+body {
+    color: $color;
+    background-color: #000;
+    font:$mainfont;
+}
+a{
+    text-decoration: none;
+    color: $color;
+    &:hover{
+        color: $hovercolor;
+    }
+}
+.mp-logo {
+    font: $logofont;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    & h1 {
+        line-height: 0.75;
+        padding: 30px;
+        user-select: none;
+        &:hover{
+
+        }
+    }
+    &:after,&:before{
+        content: ' ';
+        position: absolute;        
+        display: block;
+        visibility: hidden;
+        top:50%;
+        width: 75%;
+        height: 3px;
+        background-color: $color;
+    }
+    &:after{
+        left: -75%;        
+        animation: fadeIn-after 1.3s linear 3.5s forwards;
+    }
+    &:before{
+        left: 100%;
+        animation: fadeIn-before 1.3s linear 3.5s forwards;
+    }
+}
+/* HOMEPAGE MENU SECTION */
+.mp-menu_item{
+    position: absolute;
+    font:$mainfont;
+    opacity: 0;
+    animation: showUp 2s ease-in 4.3s forwards;
+    text-transform: uppercase;
+}
+.item{
+    &_about{
+        top: 35%;
+        left: -75%;
+    }
+    &_dyplomas{
+        top: 35%;
+        right: -75%; 
+    }
+    &_works{
+        bottom: 35%;
+        left: -75%;
+    }
+    &_contacts{
+        bottom: 35%;
+        right: -75%;
+    }
+}
+
+@import "dyplomas.scss";
+
+.mp-map{
+    background: url(../img/map.jpg) no-repeat cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    &:after,&:before{
+        content: ' ';
+        position: absolute;        
+        display: block;
+        visibility: hidden;
+        top:50%;
+        width: 75%;
+        height: 3px;
+        background-color: $color;
+    }
+    &:after{
+        left: -75%;        
+        animation: fadeIn-after 1.3s linear 3.5s forwards;
+    }
+    &:before{
+        left: 100%;
+        animation: fadeIn-before 1.3s linear 3.5s forwards;
+    }
+}
+
+/* HOMEPAGE FOOTER SECTION */
+.mp-footer{
+    bottom: 0;   
+    position: absolute;
+    font-size: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

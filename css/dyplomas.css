@@ -1,0 +1,29 @@
+/*FONTS*/
+/*COLORS*/
+.mp-header {
+  background-color: #000;
+  color: #fff;
+  font: 400 20px "Montserrat", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.mp-menu {
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center; }
+  .mp-menu li {
+    list-style-type: none;
+    text-transform: uppercase; }
+    .mp-menu li a:hover {
+      border-bottom: 2px solid #d20e74; }
+  .mp-menu_logo {
+    flex: 0 1 20%;
+    font: 400 52px "Amatic SC", cursive;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 70px;
+    /*animation: coverboom 5s forwards normal ease-in;	*/
+    background: url(../img/pink_bg.png) no-repeat;
+    background-size: contain; }

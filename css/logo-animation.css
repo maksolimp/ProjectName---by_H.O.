@@ -1,0 +1,52 @@
+@keyframes fadeIn-after {
+    0% {
+       transform:translateX(0) scaleX(0);
+       transform-origin:left;
+       left: 0;
+       right: auto;
+       visibility: hidden;
+    }
+    100% {        
+      transform:translateX(0) scaleX(1);
+      transform-origin:left;
+      left: -75%;
+      right: auto;
+      visibility: visible;
+    }
+}
+
+@keyframes fadeIn-before {
+    0% {
+       transform:translateX(0) scaleX(0);
+       transform-origin:left;
+       left: 100%;
+       right: auto;
+       visibility: hidden;
+    }
+    100% {        
+        transform:translateX(0) scaleX(1);
+       transform-origin:left;
+       right: auto;
+       visibility: visible;
+    }
+}
+
+@keyframes showUp {
+    0% {
+       opacity:0;
+    }
+    100% {        
+        opacity: 1;
+    }
+}
+/*
+@keyframes coverboom{
+  0%{
+    background:url(../img/black.png) no-repeat;
+
+  }
+  100%{
+    background:url(../img/black.png) no-repeat;
+    background-position-x: 750%;
+  }
+}*/

@@ -1,0 +1,32 @@
+@import "_mixins.scss";
+.mp-header{
+	background-color: #000;
+	color: $color;
+	font:$mainfont;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.mp-menu{
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-align-items: center;
+	        align-items: center;
+	li{
+		list-style-type: none;
+		text-transform: uppercase;
+		& a:hover{
+			border-bottom: 2px solid $hovercolor;
+		}
+	}
+	&_logo{
+		flex: 0 1 20%;
+		font:$logofont;
+		text-align: center;
+		text-transform: none !important;
+		font-size: 70px;
+		/*animation: coverboom 5s forwards normal ease-in;	*/
+		background: url(../img/pink_bg.png) no-repeat;
+		background-size:contain;
+	}
+}

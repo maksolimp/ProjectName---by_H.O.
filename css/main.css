@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap&subset=cyrillic");
+/*FONTS*/
+/*COLORS*/
+@import url(preloader-animation.css);
+@import url(logo-animation.css);
+body {
+  color: #fff;
+  background-color: #000;
+  font: 400 20px "Montserrat", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover {
+    color: #d20e74; }
+
+.mp-logo {
+  font: 400 52px "Amatic SC", cursive;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute; }
+  .mp-logo h1 {
+    line-height: 0.75;
+    padding: 30px;
+    user-select: none; }
+  .mp-logo:after, .mp-logo:before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    top: 50%;
+    width: 75%;
+    height: 3px;
+    background-color: #fff; }
+  .mp-logo:after {
+    left: -75%;
+    animation: fadeIn-after 1.3s linear 3.5s forwards; }
+  .mp-logo:before {
+    left: 100%;
+    animation: fadeIn-before 1.3s linear 3.5s forwards; }
+
+/* HOMEPAGE MENU SECTION */
+.mp-menu_item {
+  position: absolute;
+  font: 400 20px "Montserrat", sans-serif;
+  opacity: 0;
+  animation: showUp 2s ease-in 4.3s forwards;
+  text-transform: uppercase; }
+
+.item_about {
+  top: 35%;
+  left: -75%; }
+
+.item_dyplomas {
+  top: 35%;
+  right: -75%; }
+
+.item_works {
+  bottom: 35%;
+  left: -75%; }
+
+.item_contacts {
+  bottom: 35%;
+  right: -75%; }
+
+/*FONTS*/
+/*COLORS*/
+.mp-header {
+  background-color: #000;
+  color: #fff;
+  font: 400 20px "Montserrat", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.mp-menu {
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center; }
+  .mp-menu li {
+    list-style-type: none;
+    text-transform: uppercase; }
+    .mp-menu li a:hover {
+      border-bottom: 2px solid #d20e74; }
+  .mp-menu_logo {
+    flex: 0 1 20%;
+    font: 400 52px "Amatic SC", cursive;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 70px;
+    /*animation: coverboom 5s forwards normal ease-in;	*/
+    background: url(../img/pink_bg.png) no-repeat;
+    background-size: contain; }
+
+.mp-map {
+  background: url(../img/map.jpg) no-repeat cover;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+  width: 30%;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute; }
+  .mp-map:after, .mp-map:before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    top: 50%;
+    width: 75%;
+    height: 3px;
+    background-color: #fff; }
+  .mp-map:after {
+    left: -75%;
+    animation: fadeIn-after 1.3s linear 3.5s forwards; }
+  .mp-map:before {
+    left: 100%;
+    animation: fadeIn-before 1.3s linear 3.5s forwards; }
+
+/* HOMEPAGE FOOTER SECTION */
+.mp-footer {
+  bottom: 0;
+  position: absolute;
+  font-size: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%); }
